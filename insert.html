@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='js/jquery-3.7.1.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            $("#append").click(function(){
+                $("#box p:first").append(" append")
+            })
+            $("#prepend").click(function(){
+                $("#box p:nth-child(2)").prepend("prepend ")
+            })
+            $("#before").click(function(){
+                $("#box p:nth-child(3)").before("<p>before</p>")
+            })
+            $("#after").click(function(){
+                $("#box p:nth-child(4)").after("<p>after</p>")
+            })
+            $("#remove").click(function(){
+                $("#box p:nth-child(5)").remove()
+            })
+        });
+    </script>
+</head>
+<body>
+    <a id="append" href="#" >append</a>
+    <a id="prepend" href="#" >prepend</a>
+    <a id="before" href="#" >before</a>
+    <a id="after" href="#" >after</a>
+    <a id="remove" href="#" >remove</a>
+
+    <div id="box">
+        <p>this is the 1</p>
+        <p>this is the 2</p>
+        <p>this is the 3</p>
+        <p>this is the 4</p>
+        <p>this is the 5</p>
+    </div>
+</body>
+</html>

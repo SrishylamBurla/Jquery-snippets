@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='js/jquery-3.7.1.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            $('#grow').click(function() {
+                $('#box').animate({
+                    width: '+=50px',
+                    height: '+=50px'
+                }, 1000);
+            });
+
+            $("#move").click(function(){
+                $("#box").animate({
+                    left: '+=100px',
+                }, 1000);
+            });
+            $("#increaSize").click(function(){
+                $("#box").animate({
+                    fontSize: '+=10px',
+                }, 1000);
+            }); 
+
+            $("#doMany").click(function(){
+                $("#box").animate({
+                    width: '400px',
+                    height: '400px',
+                    left: '500px',
+                    fontSize: '30px'
+                }, 1500);
+            });
+        })
+
+    </script>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: #cecece;
+            margin-top: 10%;
+            position: absolute;
+        }   
+        #box p {
+            text-transform: uppercase;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a id="grow" href="#">grow</a>
+    <a id="move" href="#">move</a>
+    <a id="increaSize" href="#">increaseSize</a>
+    <a id="doMany" href="#">do many things</a>
+    <div id="box">
+        <p>Hello Students</p>
+
+    </div>
+    
+</body>
+</html>

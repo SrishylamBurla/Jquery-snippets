@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='js/jquery-3.7.1.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            // $("#add-class").click(function() {
+            //     $("p").addClass("color");
+            // });
+            // $("#add-class").click(function() {
+            //     $("p:first").addClass("color");
+            // });
+
+            // $("#remove-class").click(function() {
+            //     $("p").removeClass("color");
+            // });
+            // $("#remove-class").click(function() {
+            //     $("p:first").removeClass("color");
+            // });
+
+            $("#toggle").click(function() {
+                $("p").toggleClass("color");
+            });   
+            
+            $("#increase-Size").click(function() {
+                $("p:first").css("font-size", "+=1px");
+            });
+        });
+    </script>
+    <style>
+        .color {
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+        <a href="#" id="add-class">add class</a>
+        <a href="#" id="remove-class">remove class</a>
+        <a href="#" id="toggle">toggle class</a>
+        <a href="#" id="increase-Size">increase-Size</a>
+
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    
+</body>
+</html>
